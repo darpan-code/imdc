@@ -33,12 +33,12 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="/assets/fonts/linear-icons-font/style.css"
+            href="/assets/styles/fonts/linear-icons-font/style.css"
             type="text/css"
           />
           <link
             rel="stylesheet"
-            href="/assets/fonts/fontawesome-free-5.12.1-web/css/all.min.css"
+            href="/assets/styles/fonts/fontawesome-free-5.12.1-web/css/all.min.css"
             type="text/css"
           />
           {/* ===== PREFETCH ===== */}
