@@ -1,5 +1,7 @@
+import BlogSection from "../components/blog/BlogSection";
+
 const BlogPage = () => {
-  return <h1>Blog Page</h1>;
+  return <BlogSection />;
 };
 
 export default BlogPage;

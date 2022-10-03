@@ -1,5 +1,7 @@
 import AboutSection from "../components/about/about";
+import CounterSection from "../components/counter/CounterSection";
 import ServicesSection from "../components/services/ServicesSection";
+import SliderSection from "../components/slider/SliderSection";
 import TestimonialSection from "../components/testimonial/TestimonialSection";
 
 const AboutPage = () => {
@@ -9,6 +11,8 @@ const AboutPage = () => {
         <AboutSection />
         <ServicesSection />
         <TestimonialSection />
+        <SliderSection />
+        <CounterSection />
       </section>
       <style jsx>{`
         @media (max-width: 768px) {

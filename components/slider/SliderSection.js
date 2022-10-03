@@ -2,23 +2,23 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-const TestimonialSection = () => {
+const SliderSection = () => {
   return (
     <>
       <div className="row">
         <div className="col-xs-12 col-sm-12">
           <div className="block-title">
-            <h3>Testimonials</h3>
+            <h3>Cilents</h3>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col-xs-12 col-sm-12">
-          <div className="testimonials">
+          <div className="clients">
             <Splide
               options={{
                 type: "loop",
-                perPage: 2,
+                perPage: 5,
                 perMove: 1,
                 gap: ".5rem",
                 arrows: false,
@@ -27,12 +27,13 @@ const TestimonialSection = () => {
                 interval: 2000,
                 lazyLoad: "nearby",
                 breakpoints: {
-                  767: { perPage: 1 },
+                  767: { perPage: 3 },
+                  576: { perPage: 2 },
                 },
               }}
             >
               <SplideSlide>
-                <TestimonialItem />
+                <SlideItem />
               </SplideSlide>
             </Splide>
           </div>
@@ -44,32 +45,18 @@ const TestimonialSection = () => {
   );
 };
 
-const TestimonialItem = () => {
+const SlideItem = () => {
   return (
-    <div className="testimonial">
-      <div className="img">
+    <div className="client-block">
+      <a href="#" target="_blank" title="Logo">
         <img
-          src="https://lmpixels.com/demo/breezycv/darkfw/1/img/testimonials/testimonial-1.jpg"
-          alt="Alex Smith"
+          style={{ width: "144px" }}
+          src="https://lmpixels.com/demo/breezycv/darkfw/1/img/clients/client-4.png"
+          alt="Logo"
         />
-      </div>
-      <div className="text">
-        <p>
-          Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.
-          Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo
-          id ligula pellentesque, at vehicula dui ultrices.
-        </p>
-      </div>
-
-      <div className="author-info">
-        <h4 className="author">Julia Hickman</h4>
-        <h5 className="company">Omni Source</h5>
-        <div className="icon">
-          <i className="fas fa-quote-right"></i>
-        </div>
-      </div>
+      </a>
     </div>
   );
 };
 
-export default TestimonialSection;
+export default SliderSection;

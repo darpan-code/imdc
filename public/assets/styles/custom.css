@@ -4,3 +4,9 @@
 a:hover {
   text-decoration: none;
 }
+.header {
+  z-index: 100;
+}
+.post-content .entry-content p {
+  margin-bottom: 10px;
+}
