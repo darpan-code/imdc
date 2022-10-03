@@ -39,7 +39,7 @@ const TestimonialSection = () => {
         </div>
       </div>
 
-      <div class="white-space-50"></div>
+      <div className="white-space-50"></div>
     </>
   );
 };

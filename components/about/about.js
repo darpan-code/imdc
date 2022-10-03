@@ -58,7 +58,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div class="white-space-30"></div>
+      <div className="white-space-30"></div>
     </>
   );
 };
