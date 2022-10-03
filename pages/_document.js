@@ -31,6 +31,16 @@ class MyDocument extends Document {
             href="/assets/styles/custom.css"
             type="text/css"
           />
+          <link
+            rel="stylesheet"
+            href="/assets/fonts/linear-icons-font/style.css"
+            type="text/css"
+          />
+          <link
+            rel="stylesheet"
+            href="/assets/fonts/fontawesome-free-5.12.1-web/css/all.min.css"
+            type="text/css"
+          />
           {/* ===== PREFETCH ===== */}
           <link rel="preconnect" href="https://fonts.googleapis.com/" />
           <link
